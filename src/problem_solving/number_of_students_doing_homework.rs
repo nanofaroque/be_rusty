@@ -12,7 +12,6 @@ fn main() {
     let query_time=4;
     let res= busy_student(start_time,end_time,query_time);
     println!("{}", res)
-
 }
 
 pub fn busy_student(start_time: Vec<i32>, end_time: Vec<i32>, query_time: i32) -> i32 {
