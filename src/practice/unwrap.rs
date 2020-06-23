@@ -5,9 +5,7 @@ fn give_commoner(gift: Option<&str>){
         Some("snake") =>{
             println!("{}", "It is a snake");
         },
-        Some(_inner) =>{
-          println!("{}","inner has been covered");
-        },
+        Some(_inner)   => println!("{}? How nice.", _inner),
         None => {
             println!("{}", "It is a NONE");
         }
@@ -22,6 +20,7 @@ fn give_princess(gift: Option<&str>){
 fn main() {
     println!("{}", "rusy");
     give_commoner(Some("snake"));
+    give_commoner(Some("buck"));
     give_commoner(None);
 
     give_princess(Some("snake"));
