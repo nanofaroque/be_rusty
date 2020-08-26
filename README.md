@@ -6,3 +6,6 @@
 
 # Memory Safety
 * https://hacks.mozilla.org/2019/01/fearless-security-memory-safety/
+
+# Writing a basic REDIS client
+* https://www.youtube.com/watch?v=8TfjFZ478Rs
