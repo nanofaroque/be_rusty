@@ -1,5 +1,5 @@
 mod practice;
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, world! Omar ");
     practice::hello::hello_world();
 }
