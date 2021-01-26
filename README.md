@@ -9,3 +9,6 @@
 
 # Writing a basic REDIS client
 * https://www.youtube.com/watch?v=8TfjFZ478Rs
+
+# Interpreter in java, try to write into rust
+https://craftinginterpreters.com/introduction.html
