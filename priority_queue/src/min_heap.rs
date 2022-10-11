@@ -2,11 +2,13 @@
 use std::collections::BinaryHeap;
 use std::cmp::Ordering;
 
+
 /**
  * 
- * Name: Pink, Age: 32 
- * Name: faroque, Age: 31 
+ * Output: 
  * Name: omar, Age: 30 
+ * Name: faroque, Age: 31 
+ * Name: Pink, Age: 32 
 */
 
 struct Person{
@@ -19,7 +21,7 @@ impl Eq for Person {}
 
 impl Ord for Person {
     fn cmp(&self, other: &Person) -> Ordering {
-        self.age.cmp(&other.age)
+        self.age.cmp(&other.age).reverse()
     }
 }
 
@@ -47,7 +49,7 @@ fn main() {
     heap.push(a);
     heap.push(b);
     heap.push(c);
-
+    
     let p=heap.pop().unwrap();
     println!("Name: {}, Age: {} ",p.name,p.age);
 
