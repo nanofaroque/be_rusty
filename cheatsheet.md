@@ -23,7 +23,16 @@ Trait
      ```
      * multiple trait
      ```
-     pub fn notify<T: Summary+Display>(item: &T) {  // Take an item that implements traitName
+     pub fn notify<T: Summary+Display>(item: &T) {  // Summary and Display are the trait
          
+     }
+     ```
+
+     ```
+      pub fn notify<T,U>(t: &T,u: &U )->i32
+          where T: Display+Clone,
+                 U: Clone + Debug  {  // T implements Display and Clone trait
+                                      // U implements Clone and Debug trait
+ 
      }
      ```
